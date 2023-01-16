@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap%27');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    /* border: 1px solid red; */
+}
+
+/* main (Conteúdo Principal) */
+main {
+    height: 95vh;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+
+}
+
+#form-login {
+    width: 60vw;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    padding: 2em 2.7em;
+    background: #2f2841;
+    border-radius: 1em;
+    box-shadow: 0 10px 40px #00000056;
+    /* border: 1px solid blue; */
+}
+
+#form-login form h1 {
+    color: #f2685e;
+    font-weight: 800;
+    margin: 0;
+}
+
+form {
+    width: 100%;
+}
+
+form fieldset{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border: none;
+    margin: 10px 0;
+    /* border: 1px solid red; */
+}
+
+fieldset input {
+    width: 100%;
+    border: none;
+    border-radius: .5em;
+    padding: 1.3em;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 11pt;
+    box-shadow: 0 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+fieldset input::placeholder {
+    color: #f0ffff94;
+}
+
+fieldset label {
+    color: #f0ffffde;
+    margin-bottom: .5em;
+}
+
+#bt-login, #esqueci-senha {
+    width: 100%;
+    padding: 1em;
+    margin: 1.5em 0 .03em;
+    border: none;
+    border-radius: .5em;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: .25em;
+    color: #2b134b;
+    background: #f2685e;
+    cursor: pointer;
+    box-shadow: 0 10px 40px -12px;
+}
+
+/* footer (Rodapé) */
+footer {
+    width: 100%;
+    height: 5vh;
+    background: #2f2841;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+footer strong {
+    color: #f2685e;
+}

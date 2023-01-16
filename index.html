@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Home | Berçario</title>
 </head>
 <body>
-    
-    <!-- Cabeçalho -->
-    <header>
-        <div id="logo">
-            <div id="logo-img"></div>
-            <h1>Berçario Clean</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Nascimentos</a></li>
-                <li><a href="#">Médicos</a></li>
-                <li><a href="#">Mães</a></li>
-            </ul>
-        </nav>
-    </header>
 
     <!-- Conteúdo Principal -->
     <main>
+
+        <div id="hub-login">
+            <div id="form-login">
+                <form action="home.html" method="post">
+                    <h1>Efetue o login</h1>
+
+                    <fieldset>
+                        <label for="login-usuario">Usuário</label>
+                        <input type="text" name="login-usuario" id="login-usuario" placeholder="Digite seu nome de usuario...">
+                    </fieldset>
+                    <fieldset>
+                        <label for="login-senha">Senha</label>
+                        <input type="text" name="login-senha" id="login-senha" placeholder="Digite sua senha...">
+                    </fieldset>
+                    <input type="submit" name="login" value="Logar" id="bt-login">
+                    <button id="esqueci-senha" name="esqueci-senha">Esqueci a senha</button>
+                </form>
+            </div>
+        </div>
 
     </main>
     
