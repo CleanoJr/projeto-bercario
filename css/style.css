@@ -24,6 +24,7 @@ header {
 
 #logo {
     height: 100%;
+    max-width: 13em;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -31,7 +32,6 @@ header {
     flex-grow: 1;
     /* border: 1px solid blue; */
     background: #f2685e;
-
 }
 
 #header-nav {
@@ -39,7 +39,6 @@ header {
     align-items: center;
     justify-content: center;
     flex-grow: 2;
-
 }
 
 header ul {
