@@ -65,11 +65,57 @@ main {
 
 #left-hub , #right-hub {
     height: 90vh;
-    width: 50vw;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid blue;
+}
+
+
+#left-hub aside {
+    height: 100%;
+}
+
+#left-nav-menu ul {
+    list-style: none;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 1rem;
+}
+
+#left-nav-menu li {
+
+    border-radius: .25em;
+    background: #f2685e;
+    cursor: pointer;
+    margin: 1em 1em;
+}
+
+#left-nav-menu ul li a {
+    width: 7em;
+    height:3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-button {
+    width: 7em;
+    height:3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: .25em;
+    background: #f2685e;
+    color: #fff;
+    cursor: pointer;
+    margin: 1em 1em;
+    /* border: 1px solid green; */
+
 }
 
 #right-hub {
