@@ -28,11 +28,14 @@
     <main>
         <div id="left-hub">
             <!-- Inserir butões de opções -->
-            <nav>
-                <div class="nav-button" onclick="(window.location='nascimentos.php')">
-                    <p>Nascimento</p>
-                </div>
-            </nav>
+            <aside>
+                <nav id="left-nav-menu">
+                    <ul>
+                        <li><a href="./nascimentos.php"><strong>Nascimentos</strong></a></li>
+                        <!-- <li><a href="./nascimentos.php"><strong>Nascimentos</strong></a></li> -->
+                    </ul>
+                </nav>
+            </aside>
         </div>
         <div id="right-hub">
             
