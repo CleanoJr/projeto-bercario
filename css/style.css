@@ -85,7 +85,6 @@ main {
 }
 
 #left-nav-menu li {
-
     border-radius: .25em;
     background: #f2685e;
     cursor: pointer;
@@ -119,6 +118,7 @@ main {
 }
 
 #right-hub {
+    width: 100%;
     border: 1px solid green;
 }
 

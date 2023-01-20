@@ -1,0 +1,50 @@
+#right-hub table {
+    border-collapse: collapse;
+    margin: auto;
+    border: 1px solid #000;
+    color:#000;
+}
+
+td{
+/* padding: .2em; */
+text-align: center;
+width: 120px;
+}
+
+th{
+font-weight: bold;
+}
+
+a {
+    text-decoration:none;
+}
+
+.table-action-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+}
+
+/* a img {
+    height: 16px;
+    width: 16px;
+    background: none;
+} */
+
+/* button > img {
+    height: 16px;
+    width: 16px;
+    background: none;
+    border: none;
+} */
+
+
+tbody tr:nth-child(odd) {
+background-color: #DCEBE6;
+}
+
+/* tr:hover:nth-child(1n + 2) {
+background-color: #085F63;
+color: #fff;
+} */
