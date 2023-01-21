@@ -74,6 +74,9 @@ main {
 
 #left-hub aside {
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
 }
 
 #left-nav-menu ul {
@@ -94,9 +97,6 @@ main {
 #left-nav-menu ul li a {
     width: 7em;
     height:3em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-decoration: none;
     color: #fff;
 }

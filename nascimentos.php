@@ -35,7 +35,7 @@
             <aside>
                 <nav id="left-nav-menu">
                     <ul>
-                        <li><a href="./nascimentos.php"><strong>Nascimentos</strong></a></li>
+                        <li><a href="./cadNascimento.php"><strong>Novo Nascimento</strong></a></li>
                         <!-- <li><a href="./nascimentos.php"><strong>Nascimentos</strong></a></li> -->
                     </ul>
                 </nav>
