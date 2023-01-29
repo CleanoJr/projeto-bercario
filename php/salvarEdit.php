@@ -11,11 +11,11 @@
         $data = $_POST['dataNasc_bebe'];
         $hora = $_POST['horaNasc_bebe'];
         
-        $query = "UPDATE bebe SET nomeBebe='$nome', pesoBebe='$peso', alturaBebe='$altura', dataNascBebe='$data', horaNascBebe='$hora' WHERE id='$id'";
+        $query = "UPDATE bebe SET nomeBebe='$nome', pesoBebe='$peso', alturaBebe='$altura', dataNascBebe='$data', horaNascBebe='$hora' WHERE idBebe='$id'";
         $inserir = mysqli_query($connection, $query);
     } 
     
-    print_r($query);
+    // print_r($query);
 
     header('Location: ../nascimentos.php');
 
