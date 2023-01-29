@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/tabela.css">
     <link rel="stylesheet" href="./css/style.css">
+    <title>Nascimentos | Berçario</title>
 
     <?php  include 'php/conexao.php'; ?>
 
-    <title>Nascimentos | Berçario</title>
 </head>
 <body>
     
@@ -31,7 +31,7 @@
     <!-- Conteúdo Principal -->
     <main>
         <div id="left-hub">
-            <!-- Inserir butões de opções -->
+            <!-- Inserir botões de opções -->
             <aside>
                 <nav id="left-nav-menu">
                     <ul>
@@ -42,53 +42,55 @@
             </aside>
         </div>
         <div id="right-hub">
-            
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Nome</th>
-                        <th>Peso</th>
-                        <th>Altura</th>
-                        <th>Data do Nascimento</th>
-                        <th>Horas do Nascimento</th>
-                        <th>Ações</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php 
-                        $query = "SELECT * FROM bebe";
-                        $query_run = mysqli_query($connection, $query);
-                        if(mysqli_num_rows($query_run) > 0)
-                        {
-                            foreach($query_run as $cliente)
-                            { 
-                    ?>
-                                <tr>
-                                    <td><?= $cliente['idBebe']; ?></td>
-                                    <td><?= $cliente['nomeBebe']; ?></td>
-                                    <td><?= $cliente['pesoBebe']; ?></td>
-                                    <td><?= $cliente['alturaBebe']; ?></td>
-                                    <td><?= $cliente['dataNascBebe']; ?></td>
-                                    <td><?= $cliente['horaNascBebe']; ?></td>
-                                    
-                                    <td class="table-action-buttons">
-                                        <a href="editNascimento.php?id=<?= $cliente['idBebe']; ?>" >Editar</a>
-                                        <form action="delete_nascimento.php" method="POST">
-                                            <button type="submit" name="delete_nascimento" value="<?=$cliente['idBebe'];?>" alt="Deletar">Deletar</button>
-                                        </form>
-                                    </td>
-                                </tr>
-                            <?php        
+            <div id="right-hub-tabela">
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Peso</th>
+                            <th>Altura</th>
+                            <th>Data do Nascimento</th>
+                            <th>Horas do Nascimento</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php 
+                            $query = "SELECT * FROM bebe";
+                            $query_run = mysqli_query($connection, $query);
+                            if(mysqli_num_rows($query_run) > 0)
+                            {
+                                foreach($query_run as $bebe)
+                                { 
+                        ?>
+                                    <tr>
+                                        <td><?= $bebe['idBebe']; ?></td>
+                                        <td><?= $bebe['nomeBebe']; ?></td>
+                                        <td><?= $bebe['pesoBebe']; ?></td>
+                                        <td><?= $bebe['alturaBebe']; ?></td>
+                                        <td><?= $bebe['dataNascBebe']; ?></td>
+                                        <td><?= $bebe['horaNascBebe']; ?></td>
+                                        
+                                        <td class="table-action-buttons">
+                                            <a href="editNascimento.php?id=<?= $bebe['idBebe']; ?>" >Editar</a>
+                                            <form action="php/deleteNascimento.php" method="POST">
+                                                <button type="submit" name="delete_nascimento" value="<?=$bebe['idBebe'];?>" alt="Deletar">Deletar</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                <?php        
+                                }
                             }
-                        }
-                        else {
-                            echo "<h5> Nenhum Nascimento Cadastrado </h5>";
-                        }
-                            ?>                                
-                </tbody>
-            </table>
-
+                            else {
+                                echo "<h5> Nenhum Nascimento Cadastrado </h5>";
+                            }
+                                ?>                                
+                    </tbody>
+                </table>
+            </div>
+ 
         </div>
     </main>
     
