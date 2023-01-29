@@ -13,8 +13,8 @@
         $nome = $_POST['nome'];
         $altura = $_POST['altura'];
         $peso = $_POST['peso'];
-        $data = $_POST['dataNasc_bebe'];
-        $hora = $_POST['horaNasc_bebe'];
+        $data = $_POST['dataNascBebe'];
+        $hora = $_POST['horaNascBebe'];
         
         $query = "INSERT INTO bebe (nomeBebe, pesoBebe, alturaBebe, dataNascBebe, horaNascBebe) VALUES ('$nome','$peso','$altura','$data','$hora')";
         // $query = "INSERT INTO bebe (nomeBebe, pesoBebe, alturaBebe) VALUES ('$nome','$peso','$altura')";
@@ -66,18 +66,18 @@
     <main>
         <div id="left-hub">
             <!-- Inserir butões de opções -->
-            <!-- <aside>
+            <aside>
                 <nav id="left-nav-menu">
                     <ul>
                         <li><a href="./nascimentos.php"><strong>Nascimentos</strong></a></li>
                         <li><a href="./nascimentos.php"><strong>Nascimentos</strong></a></li>
                     </ul>
                 </nav>
-            </aside> -->
+            </aside>
         </div>
         <div id="right-hub">
             
-            <div class="form_cadastro">
+            <div class="form-cadastro">
 
                 <h1>Cadastro </h1>
                 <form action="cadNascimento.php" method="POST" >
@@ -94,20 +94,21 @@
                         <input type="number" id="peso" name="peso" placeholder="Digite a peso bebê...">
                     </div>
                     <div class="textfield">
-                        <label for="dataNasc_bebe">
+                        <label for="dataNascBebe">
                             Data do Nascimento:
-                            <input type="date" id="dataNasc_bebe" name="dataNasc_bebe">
+                            <input type="date" id="dataNascBebe" name="dataNascBebe">
                         </label>
                     </div>
                     <div class="textfield">
-                        <label for="horaNasc_bebe">
+                        <label for="horaNascBebe">
                             Hora do Nascimento:
-                            <input type="time" id="horaNasc_bebe" name="horaNasc_bebe">
+                            <input type="time" id="horaNascBebe" name="horaNascBebe">
                         </label>
                     </div>
                     <input type="submit" id="submit" name="submit">
                     <input type="reset" value="Limpar">
                 </form>
+                <button><a href="./nascimentos.php">Voltar</a></button>
             </div>
 
         </div>
