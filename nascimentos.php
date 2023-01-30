@@ -44,8 +44,8 @@
         <div id="right-hub">
             <div id="right-hub-tabela">
 
-                <div id="pesquisa-tabela-nasc">
-                    <input type="search" name="pesquisar" id="pesquisar" placeholder="Pesquisar">
+                <div id="pesquisa-tabela">
+                    <input type="search" name="pesquisar" id="-barra-pesquisa" placeholder="Pesquisar">
                     <button><img src="./assets/pesquisar.svg" alt="Realizar pesquisa"></button>
                 </div>
 
