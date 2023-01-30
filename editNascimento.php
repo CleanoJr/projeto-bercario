@@ -64,14 +64,14 @@
     <main>
         <div id="left-hub">
             <!-- Inserir butões de opções -->
-            <!-- <aside>
+            <aside>
                 <nav id="left-nav-menu">
                     <ul>
-                        <li><a href="./nascimentos.php"><strong>Nascimentos</strong></a></li>
-                        <li><a href="./nascimentos.php"><strong>Nascimentos</strong></a></li>
+                        <!-- <li><a href="./nascimentos.php"><strong>Nascimentos</strong></a></li>
+                        <li><a href="./nascimentos.php"><strong>Nascimentos</strong></a></li> -->
                     </ul>
                 </nav>
-            </aside> -->
+            </aside>
         </div>
         <div id="right-hub">
             
