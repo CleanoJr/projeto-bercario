@@ -43,7 +43,12 @@
         </div>
         <div id="right-hub">
             <div id="right-hub-tabela">
-                
+
+                <div id="pesquisa-tabela-nasc">
+                    <input type="search" name="pesquisar" id="pesquisar" placeholder="Pesquisar">
+                    <button><img src="./assets/pesquisar.svg" alt="Realizar pesquisa"></button>
+                </div>
+
                 <table>
                     <thead>
                         <tr>
@@ -74,9 +79,9 @@
                                         <td><?= $bebe['horaNascBebe']; ?></td>
                                         
                                         <td class="table-action-buttons">
-                                            <a href="editNascimento.php?id=<?= $bebe['idBebe']; ?>" >Editar</a>
+                                            <a href="editNascimento.php?id=<?= $bebe['idBebe']; ?>" ><img src="./assets/edit.svg" alt="Editar Registro"></a>
                                             <form action="php/deleteNascimento.php" method="POST">
-                                                <button type="submit" name="delete_nascimento" value="<?=$bebe['idBebe'];?>" alt="Deletar">Deletar</button>
+                                                <button type="submit" name="delete_nascimento" value="<?=$bebe['idBebe'];?>" alt="Deletar"><img src="./assets/delete.svg" alt="Deletar Registro"></button>
                                             </form>
                                         </td>
                                     </tr>
