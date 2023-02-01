@@ -1,3 +1,20 @@
+<?php
+
+include_once('./php/conexao.php');
+if (!empty($_GET['search']))
+{
+    $data = $_GET['search'];
+    $query = "SELECT * FROM bebe WHERE nomeBebe LIKE '%$data%' or dataNascBebe LIKE '%$data%' or horaNascBebe LIKE '%$data%' ORDER BY idBebe";
+
+}
+else{
+    $query = "SELECT * FROM bebe";
+}
+
+$query_run = mysqli_query($connection, $query);
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -45,8 +62,8 @@
             <div id="right-hub-tabela">
 
                 <div id="pesquisa-tabela">
-                    <input type="search" name="pesquisar" id="-barra-pesquisa" placeholder="Pesquisar">
-                    <button><img src="./assets/pesquisar.svg" alt="Realizar pesquisa"></button>
+                    <input type="search" name="pesquisar" id="pesquisar" placeholder="Pesquisar">
+                    <button onclick="searchData()"><img src="./assets/pesquisar.svg" alt="Realizar pesquisa"></button>
                 </div>
 
                 <table>
@@ -63,15 +80,13 @@
                     </thead>
                     <tbody>
                         <?php 
-                            $query = "SELECT * FROM bebe";
-                            $query_run = mysqli_query($connection, $query);
+                           
                             if(mysqli_num_rows($query_run) > 0)
                             {
                                 foreach($query_run as $bebe)
                                 { 
                         ?>
-                                    <tr>
-                                        <td><?= $bebe['idBebe']; ?></td>
+                                    <tr>                                        
                                         <td><?= $bebe['nomeBebe']; ?></td>
                                         <td><?= $bebe['pesoBebe']; ?></td>
                                         <td><?= $bebe['alturaBebe']; ?></td>
@@ -105,4 +120,20 @@
     </footer>
 
 </body>
+
+<script>
+    var search = document.getElementById('pesquisar');
+    
+    search.addEventListener("keydown", function(event) {
+        if (event.key === "Enter")
+        {
+            searchData();
+        }
+    });
+
+    function searchData() {
+        window.location = 'nascimentos.php?search='+search.value;
+    }
+
+</script>
 </html>
