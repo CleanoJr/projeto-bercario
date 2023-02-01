@@ -52,7 +52,7 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>ID</th>
+                            <!-- <th>ID</th> -->
                             <th>Nome</th>
                             <th>Peso</th>
                             <th>Altura</th>

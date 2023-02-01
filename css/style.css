@@ -133,19 +133,27 @@ main {
 }
 
 #pesquisa-tabela {
-    width: 80%;
+    width: 50%;
     height: fit-content;
     margin: 1em 0;
     display: flex;
     align-items: center;
     justify-content:space-between;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #pesquisa-tabela input {
-    height: 1.5em;
+    height: 2em;
     width: 100%;
     margin-right: 1em;
+}
+
+#pesquisa-tabela button {
+    height: 2em;
+}
+
+#pesquisa-tabela button img {
+    height: 1.5em;
 }
 
 /* ----- footer (Rodapé) ----- */
