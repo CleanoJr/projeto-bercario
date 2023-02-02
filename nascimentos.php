@@ -65,6 +65,9 @@ $query_run = mysqli_query($connection, $query);
                 <div id="pesquisa-tabela">
                     <input type="search" name="pesquisar" id="pesquisar" placeholder="Pesquisar">
                     <button onclick="searchData()"><img src="./assets/pesquisar.svg" alt="Realizar pesquisa"></button>
+                    <div id="novo-registro">
+                        <a href="./cadNascimento.php"><img src="./assets/add.svg" alt="Novo Registro"><strong>Novo Registro</strong></a>
+                    </div>
                 </div>
 
                         <?php 
