@@ -1,33 +1,31 @@
 <?php
 
-    if(!empty($_GET['id'])) 
+    if(isset($_POST['submit'])) 
     {
 
         include_once('php/conexao.php');
 
-        // // Teste de recebimento de dados
-        // print_r($_POST['nome']);
-        // print_r($_POST['crm']);
-        // print_r($_POST['especialidade']);
+        // Teste de recebimento de dados
+        print_r($_POST['nome']);
+        print_r($_POST['crm']);
+        print_r($_POST['especialidade']);
         
-        $id = $_GET['id'];        
+        $nome = $_POST['nome'];
+        $crm = $_POST['crm'];
+        $especialidade = $_POST['especialidade'];
         
-        $querySelect = "SELECT * FROM medico WHERE idMedico = $id";
-        // $result = mysqli_query($connection, $querySelect);
-        $result = $connection->query($querySelect);
-               
-        if($result->num_rows > 0){
-            while($user_data = mysqli_fetch_assoc($result)){
-                $nome = $user_data['nomeMedico'];
-                $crm = $user_data['crmMedico'];
-                $especialidade = $user_data['especialidadeMedico'];
+        $query = "INSERT INTO medico (nomeMedico, crmMedico, especialidadeMedico) VALUES ('$nome', '$crm', '$especialidade')";
+        $inserir = mysqli_query($connection, $query);
+        
+        if($inserir){
+            echo "<script language='javascript' type='text/javascript'>
+            alert('Nascimento Cadastrado com Sucesso!');window.location.href='medicos.php';</script>";   
+        } else{
+            echo "<script language='javascript' type='text/javascript'>
+            alert('Não foi possível cadastrar esse usuário!');window.location.href='cadMedico.php';</script>";
+        
+        }     
 
-            }
-
-        }else{
-            // header('Location: medicos.php');
-        }
-       
     }
 
 ?>
@@ -39,7 +37,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Editar médico | Berçario</title>
+    <title>Cadastrar médico | Berçario</title>
 </head>
 <body>
     
@@ -77,22 +75,21 @@
             <div class="form-cadastro">
 
                 <h1>Cadastro </h1>
-                <form action="php/salvarEditMedico.php" method="POST" >
+                <form action="cadMedico.php" method="POST" >
                     <div class="textfield">
                         <label for="nome">Nome: </label>                            
-                        <input type="text" id="nome" name="nome" value="<?php echo $nome ?>" placeholder="Digite o nome...">
+                        <input type="text" id="nome" name="nome" placeholder="Digite o nome...">
                     </div>
                     <div class="textfield">
                         <label for="crm">CRM: </label>
-                        <input type="text" id="crm" name="crm" value="<?php echo $crm ?>" placeholder="Digite o CRM...">
+                        <input type="text" id="crm" name="crm" placeholder="Digite o CRM...">
                     </div>
                     <div class="textfield">
                         <label for="especialidade">Especialidade: </label>
-                        <input type="text" id="especialidade" name="especialidade" value="<?php echo $especialidade ?>" placeholder="Digite a especialidade do médico...">
+                        <input type="text" id="especialidade" name="especialidade" placeholder="Digite a especialidade do médico...">
                     </div>
 
-                    <input type="hidden" name="id" value="<?php echo $id ?>">
-                    <input type="submit" id="Atualizar" name="Atualizar">
+                    <input type="submit" id="submit" name="submit">
                     <input type="reset" value="Limpar">
                 </form>
 
