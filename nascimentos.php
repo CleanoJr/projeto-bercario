@@ -52,8 +52,9 @@ $query_run = mysqli_query($connection, $query);
             <aside>
                 <nav id="left-nav-menu">
                     <ul>
-                        <li><a href="./cadNascimento.php"><strong>Novo Nascimento</strong></a></li>
-                        <!-- <li><a href="./nascimentos.php"><strong>Nascimentos</strong></a></li> -->
+                        <li><a href="./nascimentos.php"><strong>Nascimentos</strong></a></li>
+                        <li><a href="./medicos.php"><strong>Médicos</strong></a></li>
+                        <li><a href="./maes.php"><strong>Mães</strong></a></li>
                     </ul>
                 </nav>
             </aside>
