@@ -3,6 +3,7 @@
     border: 1px solid #000;
     color:#000;
     width: 70%;
+    overflow-x: auto;
 }
 
 td{
@@ -11,6 +12,12 @@ td{
 
 th{
     font-weight: bold;
+}
+
+#tr-novo-registro td{
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid pink;
 }
 
 a {
