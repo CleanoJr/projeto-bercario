@@ -129,7 +129,7 @@ $query_run = mysqli_query($connection, $query);
     });
 
     function searchData() {
-        window.location = 'nascimentos.php?search='+search.value;
+        window.location = 'medicos.php?search='+search.value;
     }
 
 </script>
