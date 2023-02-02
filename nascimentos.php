@@ -4,11 +4,11 @@ include_once('./php/conexao.php');
 if (!empty($_GET['search']))
 {
     $data = $_GET['search'];
-    $query = "SELECT * FROM bebe WHERE nomeBebe LIKE '%$data%' or dataNascBebe LIKE '%$data%' or horaNascBebe LIKE '%$data%' ORDER BY idBebe";
+    $query = "SELECT * FROM bebe WHERE nomeBebe LIKE '%$data%' or dataNascBebe LIKE '%$data%' or horaNascBebe LIKE '%$data%' ORDER BY dataNascBebe";
 
 }
 else{
-    $query = "SELECT * FROM bebe";
+    $query = "SELECT * FROM bebe ORDER BY dataNascBebe";
 }
 
 $query_run = mysqli_query($connection, $query);
