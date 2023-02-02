@@ -91,7 +91,7 @@
                     </div>
                     <div class="textfield">
                         <label for="peso">Peso: </label>
-                        <input type="number" id="peso" name="peso" placeholder="Digite a peso bebê...">
+                        <input type="number" id="peso" name="peso" step="0.010" placeholder="Digite a peso bebê...">
                     </div>
                     <div class="textfield">
                         <label for="dataNascBebe">

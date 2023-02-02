@@ -78,18 +78,18 @@
             <div class="form_cadastro">
 
                 <h1>Cadastro </h1>
-                <form action="php/salvarEdit.php" method="POST" >  
+                <form action="php/salvarEditNascimento.php" method="POST" >  
                     <div class="textfield">
                         <label for="nome">Nome: </label>                            
                         <input type="text" id="nome" name="nome" value="<?php echo $nome ?>" placeholder="Digite o nome do bebê...">
                     </div>
                     <div class="textfield">
                         <label for="altura">Altura: </label>
-                        <input type="number" id="altura" name="altura" value="<?php echo $altura ?>" placeholder="Digite a Altura bebê...">
+                        <input type="number" id="altura" name="altura" step="0.010" value="<?php echo $altura ?>" placeholder="Digite a Altura bebê...">
                     </div>
                     <div class="textfield">
                         <label for="peso">Peso: </label>
-                        <input type="number" id="peso" name="peso" value="<?php echo $peso ?>" placeholder="Digite a peso bebê...">
+                        <input type="number" id="peso" name="peso" min="1" step="0.001" value="<?php echo $peso ?>" placeholder="Digite a peso bebê...">
                     </div>
                     <div class="textfield">
                         <label for="dataNasc_bebe">Data do Nascimento: </label>
@@ -104,6 +104,8 @@
                     <input type="submit" id="Atualizar" name="Atualizar">
                     <input type="reset" value="Limpar">
                 </form>
+
+                <button><a href="./nascimentos.php">Voltar</a></button>
             </div>
 
         </div>
