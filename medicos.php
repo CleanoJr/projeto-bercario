@@ -67,6 +67,11 @@ $query_run = mysqli_query($connection, $query);
                     <button onclick="searchData()"><img src="./assets/pesquisar.svg" alt="Realizar pesquisa"></button>
                 </div>
 
+                <?php 
+                           
+                           if(mysqli_num_rows($query_run) > 0)
+                           {
+                       ?>
                 <table>
                     <thead>
                         <tr>
@@ -79,9 +84,7 @@ $query_run = mysqli_query($connection, $query);
                     </thead>
                     <tbody>
                         <?php 
-                           
-                            if(mysqli_num_rows($query_run) > 0)
-                            {
+
                                 foreach($query_run as $medico)
                                 { 
                         ?>
@@ -101,7 +104,7 @@ $query_run = mysqli_query($connection, $query);
                                 }
                             }
                             else {
-                                echo "<h5> Nenhum Médico Cadastrado </h5>";
+                                echo "<h4> NENHUM REGISTRO ENCONTRADO </h4>";
                             }
                                 ?>                                
                     </tbody>
