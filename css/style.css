@@ -99,21 +99,6 @@ main {
     color: #fff;
 }
 
-/* .nav-button {
-    width: 7em;
-    height:3em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: .25em;
-    background: #f2685e;
-    color: #fff;
-    cursor: pointer;
-    margin: 1em 1em;
-    border: 1px solid green;
-
-} */
 
 #right-hub {
     width: 100%;
@@ -133,19 +118,24 @@ main {
 }
 
 #pesquisa-tabela {
-    width: 50%;
+    width: 70%;
     height: fit-content;
     margin: 1em 0;
     display: flex;
     align-items: center;
     justify-content:space-between;
-    /* border: 1px solid red; */
+    border: 1px solid red;
+}
+
+#pesquisa {
+    display: flex;
+    justify-content: flex-start;
 }
 
 #pesquisa-tabela input {
     height: 2em;
-    width: 100%;
-    margin-right: 1em;
+    width: 70%;
+    /* margin-right: 1em; */
 }
 
 #pesquisa-tabela button {

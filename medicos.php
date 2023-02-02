@@ -61,10 +61,12 @@ $query_run = mysqli_query($connection, $query);
         </div>
         <div id="right-hub">
             <div id="right-hub-tabela">
-
                 <div id="pesquisa-tabela">
+                    <div id="pesquisa">
                     <input type="search" name="pesquisar" id="pesquisar" placeholder="Pesquisar">
-                    <button onclick="searchData()"><img src="./assets/pesquisar.svg" alt="Realizar pesquisa"></button>
+                        <button onclick="searchData()"><img src="./assets/pesquisar.svg" alt="Realizar pesquisa"></button>
+                    </div>
+                    
                     <div id="novo-registro">
                         <a href="./cadMedico.php"><img src="./assets/add.svg" alt="Novo Registro"><strong>Novo Registro</strong></a>
                     </div>
