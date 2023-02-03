@@ -86,7 +86,7 @@
                     </div>
                     <div class="textfield">
                         <label for="altura">Altura: </label>
-                        <input type="number" id="altura" name="altura" step="0.010" value="<?php echo $altura ?>" placeholder="Digite a Altura bebê...">
+                        <input type="number" id="altura" name="altura" step="0.01" value="<?php echo $altura ?>" placeholder="Digite a Altura bebê...">
                     </div>
                     <div class="textfield">
                         <label for="peso">Peso: </label>
@@ -118,4 +118,5 @@
     </footer>
 
 </body>
+
 </html>
