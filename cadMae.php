@@ -89,9 +89,11 @@
                         <input type="text" id="endereco" name="endereco" placeholder="Digite o endereço...">
                     </fieldset>
 
-                    <input type="submit" id="submit" name="submit">
-                    <input type="reset" value="Limpar">
-                    <button onclick="location.href='./maes.php'">Voltar</button>
+                    <div id="form-buttons">
+                        <input type="submit" class="form-button" id="submit" name="submit">
+                        <input type="reset" class="form-button" value="Limpar">
+                        <button class="form-button" onclick="location.href='./maes.php'">Voltar</button>
+                    </div>
                 </form>
 
             </div>

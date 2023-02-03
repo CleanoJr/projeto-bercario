@@ -93,9 +93,11 @@
 
                     <input type="hidden" name="id" value="<?php echo $id ?>">
 
-                    <input type="submit" id="Atualizar" name="Atualizar">
-                    <input type="reset" value="Limpar">
-                    <button onclick="location.href='./maes.php'">Voltar</button>
+                    <div id="form-buttons">
+                        <input class="form-button" type="submit" class="" id="Atualizar" name="Atualizar">
+                        <input class="form-button" type="reset" value="Limpar">
+                        <button class="form-button" onclick="location.href='./maes.php'">Voltar</button>
+                    </div>
                 </form>
 
             </div>

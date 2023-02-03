@@ -90,11 +90,13 @@
                         <label for="especialidade">Especialidade: </label>
                         <input type="text" id="especialidade" name="especialidade" value="<?php echo $especialidade ?>" placeholder="Digite a especialidade do médico...">
                     </fieldset>
-
                     <input type="hidden" name="id" value="<?php echo $id ?>">
-                    <input type="submit" id="Atualizar" name="Atualizar">
-                    <input type="reset" value="Limpar">
-                    <button onclick="location.href='./medicos.php'">Voltar</button>
+
+                    <div id="form-buttons">
+                        <input type="submit" id="Atualizar" name="Atualizar">
+                        <input type="reset" value="Limpar">
+                        <button onclick="location.href='./medicos.php'">Voltar</button>
+                    </div>
                 </form>
 
             </div>

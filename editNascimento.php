@@ -100,13 +100,14 @@
                         <label for="horaNasc_bebe">Hora do Nascimento: </label>
                         <input type="time" id="horaNasc_bebe" value="<?php echo $hora ?>" name="horaNasc_bebe">
                     </fieldset>
+                    <input type="hidden" class="form-button" name="id" value="<?php echo $id ?>">
 
-                    <input type="hidden" name="id" value="<?php echo $id ?>">
-                    <input type="submit" id="Atualizar" name="Atualizar">
-                    <input type="reset" value="Limpar">
+                    <div id="form-buttons">
+                        <input type="submit" class="form-button" id="Atualizar" name="Atualizar">
+                        <input type="reset" class="form-button" value="Limpar">
+                        <button class="form-button" onclick="location.href='./nascimentos.php'">Voltar</button>
+                    </div>
                 </form>
-
-                <button><a href="./nascimentos.php">Voltar</a></button>
             </div>
 
         </div>

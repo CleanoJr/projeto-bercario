@@ -89,9 +89,11 @@
                         <input type="text" id="especialidade" name="especialidade" placeholder="Digite a especialidade do médico...">
                     </fieldset>
 
-                    <input type="submit" id="submit" name="submit">
-                    <input type="reset" value="Limpar">
-                    <button onclick="location.href='./medicos.php'">Voltar</button>
+                    <div id="form-buttons">
+                        <input class="form-button" type="submit" id="submit" name="submit">
+                        <input class="form-button" type="reset" value="Limpar">
+                        <button class="form-button" onclick="location.href='./medicos.php'">Voltar</button>
+                    </div> 
                 </form>
 
             </div>
