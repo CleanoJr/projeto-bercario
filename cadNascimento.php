@@ -78,38 +78,35 @@
         </div>
         <div id="right-hub">
             
-            <div class="form-cadastro">
+            <div id="form-cadastro">
 
-                <h1>Cadastro </h1>
                 <form action="cadNascimento.php" method="POST" >
-                    <div class="textfield">
+                    <h1>Cadastro de Nascimento</h1>
+                    <fieldset>
                         <label for="nome">Nome: </label>                            
                         <input type="text" id="nome" name="nome" placeholder="Digite o nome do bebê...">
-                    </div>
-                    <div class="textfield">
-                        <label for="altura">Altura: </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="altura">Altura (cm): </label>
                         <input type="number" id="altura" name="altura" placeholder="Digite a Altura bebê...">
-                    </div>
-                    <div class="textfield">
-                        <label for="peso">Peso: </label>
-                        <input type="number" id="peso" name="peso" step="0.010" placeholder="Digite a peso bebê...">
-                    </div>
-                    <div class="textfield">
-                        <label for="dataNascBebe">
-                            Data do Nascimento:
-                            <input type="date" id="dataNascBebe" name="dataNascBebe">
-                        </label>
-                    </div>
-                    <div class="textfield">
-                        <label for="horaNascBebe">
-                            Hora do Nascimento:
-                            <input type="time" id="horaNascBebe" name="horaNascBebe">
-                        </label>
-                    </div>
+                    </fieldset>
+                    <fieldset>
+                        <label for="peso">Peso (kg): </label>
+                        <input type="number" id="peso" name="peso" min="0.01" step="0.010" placeholder="Digite a peso bebê...">
+                    </fieldset>
+                    <fieldset>
+                        <label for="dataNascBebe">Data do Nascimento: </label>
+                        <input type="date" id="dataNascBebe" name="dataNascBebe">
+                    </fieldset>
+                    <fieldset>
+                        <label for="horaNascBebe">Hora do Nascimento: </label>
+                        <input type="time" id="horaNascBebe" name="horaNascBebe">
+                    </fieldset>
+
                     <input type="submit" id="submit" name="submit">
                     <input type="reset" value="Limpar">
+                    <button onclick="location.href='./nascimentos.php'">Voltar</button>
                 </form>
-                <button><a href="./nascimentos.php">Voltar</a></button>
             </div>
 
         </div>

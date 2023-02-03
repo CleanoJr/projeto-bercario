@@ -72,28 +72,27 @@
         </div>
         <div id="right-hub">
             
-            <div class="form-cadastro">
+            <div id="form-cadastro">
 
-                <h1>Cadastro </h1>
                 <form action="cadMedico.php" method="POST" >
-                    <div class="textfield">
+                    <h1>Cadastro </h1>
+                    <fieldset>
                         <label for="nome">Nome: </label>                            
                         <input type="text" id="nome" name="nome" placeholder="Digite o nome...">
-                    </div>
-                    <div class="textfield">
+                    </fieldset>
+                    <fieldset>
                         <label for="crm">CRM: </label>
                         <input type="text" id="crm" name="crm" placeholder="Digite o CRM...">
-                    </div>
-                    <div class="textfield">
+                    </fieldset>
+                    <fieldset>
                         <label for="especialidade">Especialidade: </label>
                         <input type="text" id="especialidade" name="especialidade" placeholder="Digite a especialidade do médico...">
-                    </div>
+                    </fieldset>
 
                     <input type="submit" id="submit" name="submit">
                     <input type="reset" value="Limpar">
+                    <button onclick="location.href='./medicos.php'">Voltar</button>
                 </form>
-
-                <button><a href="./medicos.php">Voltar</a></button>
 
             </div>
 

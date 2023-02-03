@@ -74,29 +74,29 @@
         </div>
         <div id="right-hub">
             
-            <div class="form-cadastro">
+            <div id="form-cadastro">
 
-                <h1>Cadastro </h1>
                 <form action="php/salvarEditMae.php" method="POST" >
-                    <div class="textfield">
+                    <h1>Edição de Registro </h1>
+                    <fieldset>
                         <label for="nome">Nome: </label>                            
                         <input type="text" id="nome" name="nome" value="<?php echo $nome ?>"  placeholder="Digite o nome...">
-                    </div>
-                    <div class="textfield">
+                    </fieldset>
+                    <fieldset>
                         <label for="telefone">Telefone: </label>
                         <input type="text" id="telefone" name="telefone" value="<?php echo $telefone ?>" placeholder="Digite o Telefone...">
-                    </div>
-                    <div class="textfield">
-                        <label for="endereco">endereco: </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="endereco">Endereco: </label>
                         <input type="text" id="endereco" name="endereco" value="<?php echo $endereco ?>" placeholder="Digite o endereço...">
-                    </div>
+                    </fieldset>
 
                     <input type="hidden" name="id" value="<?php echo $id ?>">
+
                     <input type="submit" id="Atualizar" name="Atualizar">
                     <input type="reset" value="Limpar">
+                    <button onclick="location.href='./maes.php'">Voltar</button>
                 </form>
-
-                <button><a href="./maes.php">Voltar</a></button>
 
             </div>
 

@@ -72,28 +72,27 @@
         </div>
         <div id="right-hub">
             
-            <div class="form-cadastro">
+            <div id="form-cadastro">
 
-                <h1>Cadastro </h1>
                 <form action="cadMae.php" method="POST" >
-                    <div class="textfield">
+                    <h1>Cadastro de Mãe</h1>
+                    <fieldset>
                         <label for="nome">Nome: </label>                            
                         <input type="text" id="nome" name="nome" placeholder="Digite o nome...">
-                    </div>
-                    <div class="textfield">
+                    </fieldset>
+                    <fieldset>
                         <label for="telefone">Telefone: </label>
                         <input type="text" id="telefone" name="telefone" placeholder="Digite o Telefone...">
-                    </div>
-                    <div class="textfield">
+                    </fieldset>
+                    <fieldset>
                         <label for="endereco">endereco: </label>
                         <input type="text" id="endereco" name="endereco" placeholder="Digite o endereço...">
-                    </div>
+                    </fieldset>
 
                     <input type="submit" id="submit" name="submit">
                     <input type="reset" value="Limpar">
+                    <button onclick="location.href='./maes.php'">Voltar</button>
                 </form>
-
-                <button><a href="./maes.php">Voltar</a></button>
 
             </div>
 

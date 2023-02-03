@@ -76,27 +76,26 @@
             
             <div class="form-cadastro">
 
-                <h1>Cadastro </h1>
                 <form action="php/salvarEditMedico.php" method="POST" >
-                    <div class="textfield">
+                    <h1>Cadastro </h1>
+                    <fieldset>
                         <label for="nome">Nome: </label>                            
                         <input type="text" id="nome" name="nome" value="<?php echo $nome ?>" placeholder="Digite o nome...">
-                    </div>
-                    <div class="textfield">
+                    </fieldset>
+                    <fieldset>
                         <label for="crm">CRM: </label>
                         <input type="text" id="crm" name="crm" value="<?php echo $crm ?>" placeholder="Digite o CRM...">
-                    </div>
-                    <div class="textfield">
+                    </fieldset>
+                    <fieldset>
                         <label for="especialidade">Especialidade: </label>
                         <input type="text" id="especialidade" name="especialidade" value="<?php echo $especialidade ?>" placeholder="Digite a especialidade do médico...">
-                    </div>
+                    </fieldset>
 
                     <input type="hidden" name="id" value="<?php echo $id ?>">
                     <input type="submit" id="Atualizar" name="Atualizar">
                     <input type="reset" value="Limpar">
+                    <button onclick="location.href='./medicos.php'">Voltar</button>
                 </form>
-
-                <button><a href="./medicos.php">Voltar</a></button>
 
             </div>
 

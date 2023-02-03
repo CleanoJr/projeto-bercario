@@ -146,6 +146,63 @@ main {
     height: 1.5em;
 }
 
+#form-cadastro {
+    width: 60vw;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    padding: 2em 2.7em;
+    /* background: #2f2841; */
+    border-radius: 1em;
+    border: 1px solid pink;
+}
+
+#form-cadastro form h1 {
+    color: #f2685e;
+    font-weight: 800;
+    margin: 0;
+}
+
+#form-cadastro form {
+    width: 100%;
+}
+
+#form-cadastro form fieldset{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border: none;
+    margin: .5em 0;
+    /* border: 1px solid red; */
+}
+
+#form-cadastro fieldset input {
+    width: 100%;
+    border: none;
+    border-radius: .5em;
+    padding: .3em;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 11pt;
+    box-shadow: 0 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#form-cadastro fieldset input::placeholder {
+    color: #f0ffff94;
+    margin-left: .25em;
+}
+
+#form-cadastro fieldset label {
+    color: #514869;
+    margin-bottom: .5em;
+}
+
 /* ----- footer (Rodapé) ----- */
 footer {
     width: 100%;

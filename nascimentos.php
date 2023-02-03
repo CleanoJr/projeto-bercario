@@ -80,8 +80,8 @@ $query_run = mysqli_query($connection, $query);
                         <tr>
                             <!-- <th>ID</th> -->
                             <th>Nome</th>
-                            <th>Peso</th>
-                            <th>Altura</th>
+                            <th>Peso (kg)</th>
+                            <th>Altura (cm)</th>
                             <th>Data do Nascimento</th>
                             <th>Horas do Nascimento</th>
                             <th>Ações</th>
