@@ -85,7 +85,7 @@
                         <input type="text" id="telefone" name="telefone" placeholder="Digite o Telefone...">
                     </fieldset>
                     <fieldset>
-                        <label for="endereco">endereco: </label>
+                        <label for="endereco">Endereco: </label>
                         <input type="text" id="endereco" name="endereco" placeholder="Digite o endereço...">
                     </fieldset>
 
