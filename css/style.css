@@ -124,7 +124,7 @@ main {
     display: flex;
     align-items: center;
     justify-content:space-between;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #pesquisa {
